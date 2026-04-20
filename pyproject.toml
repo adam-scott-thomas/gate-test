@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gate-test"
+version = "0.1.0"
+description = "Spec conformance test suite for Maelstrom Gate — validates any implementation against SPEC.md."
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+dependencies = [
+    "maelstrom-gate>=0.1.0",
+    "pytest>=7.0",
+]
+
+[project.optional-dependencies]
+policy = ["gate-policy>=0.1.0"]
+schema = ["gate-schema>=0.1.0"]
