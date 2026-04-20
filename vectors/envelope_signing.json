@@ -15,10 +15,10 @@
         "execution_mode": "standard",
         "branching": "auto",
         "human_approved": false,
-        "created_at": 1713568000.5
+        "created_at": 1713568000500000
       },
-      "canonical_json": "{\"allowed_tools\":[\"read_file\"],\"branching\":\"auto\",\"budget_seconds\":30,\"context_id\":\"ctx-1\",\"created_at\":1713568000.5,\"envelope_id\":\"env_ctx-1_aaaaaaaa\",\"execution_mode\":\"standard\",\"human_approved\":false,\"max_tool_calls\":20,\"tool_name\":\"read_file\"}",
-      "expected_signature": "b4a29e94aea5bcb1238fab1554049f737ca6ad7f727c20c5f2edd4127a339d7e"
+      "canonical_json": "{\"allowed_tools\":[\"read_file\"],\"branching\":\"auto\",\"budget_seconds\":30,\"context_id\":\"ctx-1\",\"created_at\":1713568000500000,\"envelope_id\":\"env_ctx-1_aaaaaaaa\",\"execution_mode\":\"standard\",\"human_approved\":false,\"max_tool_calls\":20,\"tool_name\":\"read_file\"}",
+      "expected_signature": "8e69d89175a9f47882d14f686b076e8a330ff8b9bdab2d92fa5e41e092f97424"
     },
     {
       "name": "crisis_mode_deploy_tool",
@@ -34,10 +34,10 @@
         "execution_mode": "minimal",
         "branching": "deny",
         "human_approved": true,
-        "created_at": 1713568999.0
+        "created_at": 1713568999000000
       },
-      "canonical_json": "{\"allowed_tools\":[\"deploy\"],\"branching\":\"deny\",\"budget_seconds\":7,\"context_id\":\"ctx-9\",\"created_at\":1713568999.0,\"envelope_id\":\"env_ctx-9_bbbbbbbb\",\"execution_mode\":\"minimal\",\"human_approved\":true,\"max_tool_calls\":5,\"tool_name\":\"deploy\"}",
-      "expected_signature": "16d7a646aa1b8bc2a066c20b0e4c76bb3c35601cafd06faef117da81d60d5db0"
+      "canonical_json": "{\"allowed_tools\":[\"deploy\"],\"branching\":\"deny\",\"budget_seconds\":7,\"context_id\":\"ctx-9\",\"created_at\":1713568999000000,\"envelope_id\":\"env_ctx-9_bbbbbbbb\",\"execution_mode\":\"minimal\",\"human_approved\":true,\"max_tool_calls\":5,\"tool_name\":\"deploy\"}",
+      "expected_signature": "021ccf8058c158d0dc0b3a739f245e42e9d3aa5894ee423a905208ce2035ed5d"
     }
   ]
 }
