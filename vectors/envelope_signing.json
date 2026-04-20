@@ -1,0 +1,43 @@
+{
+  "signing_key": "test-signing-key-do-not-use-in-prod",
+  "vectors": [
+    {
+      "name": "normal_mode_read_tool",
+      "input": {
+        "envelope_id": "env_ctx-1_aaaaaaaa",
+        "context_id": "ctx-1",
+        "tool_name": "read_file",
+        "allowed_tools": [
+          "read_file"
+        ],
+        "max_tool_calls": 20,
+        "budget_seconds": 30,
+        "execution_mode": "standard",
+        "branching": "auto",
+        "human_approved": false,
+        "created_at": 1713568000.5
+      },
+      "canonical_json": "{\"allowed_tools\":[\"read_file\"],\"branching\":\"auto\",\"budget_seconds\":30,\"context_id\":\"ctx-1\",\"created_at\":1713568000.5,\"envelope_id\":\"env_ctx-1_aaaaaaaa\",\"execution_mode\":\"standard\",\"human_approved\":false,\"max_tool_calls\":20,\"tool_name\":\"read_file\"}",
+      "expected_signature": "b4a29e94aea5bcb1238fab1554049f737ca6ad7f727c20c5f2edd4127a339d7e"
+    },
+    {
+      "name": "crisis_mode_deploy_tool",
+      "input": {
+        "envelope_id": "env_ctx-9_bbbbbbbb",
+        "context_id": "ctx-9",
+        "tool_name": "deploy",
+        "allowed_tools": [
+          "deploy"
+        ],
+        "max_tool_calls": 5,
+        "budget_seconds": 7,
+        "execution_mode": "minimal",
+        "branching": "deny",
+        "human_approved": true,
+        "created_at": 1713568999.0
+      },
+      "canonical_json": "{\"allowed_tools\":[\"deploy\"],\"branching\":\"deny\",\"budget_seconds\":7,\"context_id\":\"ctx-9\",\"created_at\":1713568999.0,\"envelope_id\":\"env_ctx-9_bbbbbbbb\",\"execution_mode\":\"minimal\",\"human_approved\":true,\"max_tool_calls\":5,\"tool_name\":\"deploy\"}",
+      "expected_signature": "16d7a646aa1b8bc2a066c20b0e4c76bb3c35601cafd06faef117da81d60d5db0"
+    }
+  ]
+}
