@@ -40,11 +40,11 @@ def test_filter_result_has_mode():
     assert r.mode == 0.5
 
 
-def test_filter_result_has_mode_status():
-    """Result MUST contain 'mode_status' as a string (zone name)."""
+def test_filter_result_has_mode_zone():
+    """Result MUST contain 'mode_zone' as a string (zone name)."""
     r = _gate().filter(0.5)
-    assert isinstance(r.mode_status, str)
-    assert r.mode_status in ("normal", "elevated", "crisis")
+    assert isinstance(r.mode_zone, str)
+    assert r.mode_zone in ("normal", "elevated", "crisis")
 
 
 def test_filter_result_has_thresholds():

@@ -13,21 +13,21 @@ def test_normal_zone():
     gate = Gate()
     for mode in [0.0, 0.1, 0.35]:
         result = gate.filter(mode)
-        assert result.mode_status == "normal", f"mode={mode} should be normal"
+        assert result.mode_zone == "normal", f"mode={mode} should be normal"
 
 
 def test_elevated_zone():
     gate = Gate()
     for mode in [0.36, 0.5, 0.65]:
         result = gate.filter(mode)
-        assert result.mode_status == "elevated", f"mode={mode} should be elevated"
+        assert result.mode_zone == "elevated", f"mode={mode} should be elevated"
 
 
 def test_crisis_zone():
     gate = Gate()
     for mode in [0.66, 0.8, 1.0]:
         result = gate.filter(mode)
-        assert result.mode_status == "crisis", f"mode={mode} should be crisis"
+        assert result.mode_zone == "crisis", f"mode={mode} should be crisis"
 
 
 def test_mode_clamped_to_0_1():

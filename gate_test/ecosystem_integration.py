@@ -99,7 +99,7 @@ def test_full_ecosystem_pipeline(tmp_path):
             "visible": [{"name": t.name, "execution_class": t.execution_class} for t in result.visible],
             "suppressed": [{"name": t.name, "execution_class": t.execution_class} for t in result.suppressed],
             "mode": result.mode,
-            "mode_zone": result.mode_status,
+            "mode_zone": result.mode_zone,
         })
 
     # -- L0+L1: Build and verify envelope --
