@@ -16,3 +16,7 @@ dependencies = [
 [project.optional-dependencies]
 policy = ["gate-policy>=0.1.0"]
 schema = ["gate-schema>=0.1.0"]
+
+[tool.setuptools.packages.find]
+include = ["gate_test*"]
+exclude = ["tests*", "vectors*"]
