@@ -6,7 +6,7 @@
 | crisis   | mode > 0.65       |
 """
 
-from maelstrom_gate.core import Gate
+from gatekeeper.core import Gate
 
 
 def test_normal_zone():

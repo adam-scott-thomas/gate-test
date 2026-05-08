@@ -8,7 +8,7 @@
 | high_impact      | 0.35      | mode > 0.35     |
 """
 
-from maelstrom_gate.core import Gate, Tool, SUPPRESSION_THRESHOLDS, ExecutionClass
+from gatekeeper.core import Gate, Tool, SUPPRESSION_THRESHOLDS, ExecutionClass
 
 
 def test_default_thresholds_match_spec():

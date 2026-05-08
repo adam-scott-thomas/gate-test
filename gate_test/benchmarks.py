@@ -1,4 +1,4 @@
-"""Performance benchmarks for Maelstrom Gate.
+"""Performance benchmarks for Gatekeeper.
 
 Establishes baseline performance numbers for gate-core filter operations.
 Essential data for anyone evaluating Gate for production use.
@@ -11,7 +11,7 @@ from __future__ import annotations
 import time
 from dataclasses import dataclass
 
-from maelstrom_gate import Gate, Tool, build_envelope, verify_envelope
+from gatekeeper import Gate, Tool, build_envelope, verify_envelope
 
 
 EXECUTION_CLASSES = ["read_only", "advisory", "external_action", "state_mutation", "high_impact"]

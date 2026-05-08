@@ -4,7 +4,7 @@ Every tool MUST be assigned exactly one execution class.
 Unrecognized classes MUST be treated as high_impact.
 """
 
-from maelstrom_gate.core import Gate, Tool, ExecutionClass
+from gatekeeper.core import Gate, Tool, ExecutionClass
 
 VALID_CLASSES = ["read_only", "advisory", "external_action", "state_mutation", "high_impact"]
 

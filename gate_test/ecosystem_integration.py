@@ -14,9 +14,9 @@ import time
 from dataclasses import asdict
 
 # L0: gate-core
-from maelstrom_gate import Gate, Tool, build_envelope, verify_envelope
-from maelstrom_gate.core import is_suppressed, T_DOWN, T_UP
-from maelstrom_gate.ingress import validate_proposal
+from gatekeeper import Gate, Tool, build_envelope, verify_envelope
+from gatekeeper.core import is_suppressed, T_DOWN, T_UP
+from gatekeeper.ingress import validate_proposal
 
 # L1: gate-sdk
 from gate_sdk import GateClient
@@ -154,7 +154,7 @@ def test_full_ecosystem_pipeline(tmp_path):
     assert "COMPLIANCE REPORT" in text
 
     json_report = json.loads(reporter.json_report())
-    assert json_report["report_type"] == "maelstrom_gate_compliance"
+    assert json_report["report_type"] == "gatekeeper_compliance"
 
     # -- L2: SIEM export --
     exporter = SIEMExporter(store)
@@ -185,7 +185,7 @@ def test_full_ecosystem_pipeline(tmp_path):
 def test_ecosystem_project_count():
     """Verify we can import from all 11 projects."""
     imports = [
-        "maelstrom_gate",      # gate-core
+        "gatekeeper",      # gate-core
         "gate_sdk",            # gate-sdk
         "gate_policy",         # gate-policy
         "gate_compliance",     # gate-compliance

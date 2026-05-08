@@ -9,8 +9,8 @@ from dataclasses import asdict
 
 import pytest
 
-from maelstrom_gate.core import Tool
-from maelstrom_gate.envelope import (
+from gatekeeper.core import Tool
+from gatekeeper.envelope import (
     AuthorizationEnvelope, build_envelope, verify_envelope,
 )
 

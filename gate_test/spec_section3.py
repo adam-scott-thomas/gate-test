@@ -4,7 +4,7 @@ A tool is suppressed when mode > threshold for its execution class.
 If a class has no threshold (null), the tool is never suppressed.
 """
 
-from maelstrom_gate.core import Gate, Tool, is_suppressed
+from gatekeeper.core import Gate, Tool, is_suppressed
 
 
 def test_suppression_when_mode_exceeds_threshold():

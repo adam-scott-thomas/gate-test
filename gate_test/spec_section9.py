@@ -4,8 +4,8 @@
 2. Suppression check: tool must not be suppressed. Reject with execution_class_suppressed.
 """
 
-from maelstrom_gate.core import Gate, Tool
-from maelstrom_gate.ingress import validate_proposal, IngressResult
+from gatekeeper.core import Gate, Tool
+from gatekeeper.ingress import validate_proposal, IngressResult
 
 
 def test_registration_check_passes():

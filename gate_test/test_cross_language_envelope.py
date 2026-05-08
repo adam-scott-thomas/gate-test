@@ -49,7 +49,7 @@ def test_canonical_and_signature_match_vectors():
 
 def test_python_core_matches_vectors():
     """maelstrom-gate's _canonical_hash + HMAC must match vectors."""
-    from maelstrom_gate.envelope import _canonical_hash
+    from gatekeeper.envelope import _canonical_hash
 
     data = _load_vectors()
     key = data["signing_key"]

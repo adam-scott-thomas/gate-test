@@ -4,7 +4,7 @@ The output of a filter operation contains: visible (tool array), suppressed
 (tool array), mode (float), mode_zone (string), and thresholds (object).
 """
 
-from maelstrom_gate.core import Gate, Tool
+from gatekeeper.core import Gate, Tool
 
 
 def _gate():

@@ -4,7 +4,7 @@
 [![tests](https://img.shields.io/badge/tests-47_passing-brightgreen)]()
 [![license](https://img.shields.io/badge/license-Apache_2.0-green)]()
 
-> Spec conformance suite for Maelstrom Gate. Every test maps to a SPEC.md
+> Spec conformance suite for Gatekeeper. Every test maps to a SPEC.md
 > section.
 
 Pass this suite = spec-compliant. Point it at any Gate implementation (Python,
@@ -73,7 +73,7 @@ pip install gate-test[schema]  # include gate-schema validation tests
 
 ## How it fits
 
-Testing and reference for [Maelstrom Gate](https://github.com/adam-scott-thomas/maelstrom-gate).
+Testing and reference for [Gatekeeper](https://github.com/adam-scott-thomas/gate-keeper).
 The thing new implementations run before claiming conformance.
 
 ## License

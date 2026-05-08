@@ -9,7 +9,7 @@ description = "Spec conformance test suite for Maelstrom Gate — validates any 
 requires-python = ">=3.10"
 license = {text = "Apache-2.0"}
 dependencies = [
-    "maelstrom-gate>=0.1.0",
+    "gate-keeper>=1.0.0",
     "pytest>=7.0",
 ]
 
